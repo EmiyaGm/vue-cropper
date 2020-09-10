@@ -1193,6 +1193,7 @@ export default {
       let nowY = 0;
       if (e) {
         e.preventDefault();
+        e.stopImmediatePropagation();
         nowX = e.clientX ? e.clientX : e.touches[0].clientX;
         nowY = e.clientY ? e.clientY : e.touches[0].clientY;
       }
